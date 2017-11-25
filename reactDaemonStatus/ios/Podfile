@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+  platform :ios, '9.0'
+
+target 'eth-daemon' do
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket', 
+    'BatchedBridge'
+  ]
+  # Explicitly include Yoga if you are using RN >= 0.42.0
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+end

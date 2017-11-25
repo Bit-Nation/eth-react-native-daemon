@@ -1,0 +1,47 @@
+PODS:
+  - React/BatchedBridge (0.50.3):
+    - React/Core
+    - React/cxxreact_legacy
+  - React/Core (0.50.3):
+    - yoga (= 0.50.3.React)
+  - React/cxxreact_legacy (0.50.3):
+    - React/jschelpers_legacy
+  - React/DevSupport (0.50.3):
+    - React/Core
+    - React/RCTWebSocket
+  - React/fishhook (0.50.3)
+  - React/jschelpers_legacy (0.50.3)
+  - React/RCTBlob (0.50.3):
+    - React/Core
+  - React/RCTNetwork (0.50.3):
+    - React/Core
+  - React/RCTText (0.50.3):
+    - React/Core
+  - React/RCTWebSocket (0.50.3):
+    - React/Core
+    - React/fishhook
+    - React/RCTBlob
+  - yoga (0.50.3.React)
+
+DEPENDENCIES:
+  - React/BatchedBridge (from `../node_modules/react-native`)
+  - React/Core (from `../node_modules/react-native`)
+  - React/DevSupport (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTWebSocket (from `../node_modules/react-native`)
+  - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+
+EXTERNAL SOURCES:
+  React:
+    :path: "../node_modules/react-native"
+  yoga:
+    :path: "../node_modules/react-native/ReactCommon/yoga"
+
+SPEC CHECKSUMS:
+  React: 0ba6cae888dc82dc47d6d5f3090615e1b5f6f3e7
+  yoga: faecc6be81ca7823ccbb470b93a1b228499fa1c0
+
+PODFILE CHECKSUM: 21bc10664bd952434e27329cce4f529431f6775d
+
+COCOAPODS: 1.2.0
