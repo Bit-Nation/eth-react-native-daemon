@@ -2,6 +2,6 @@
 
 Setup & running:
 
-1) Start local server: npm start
-2) Launch project on Xcode. Be sure to change the hardcoded IP Address to your device's Address (this will be fixed soon)
-3) Run from Xcode  in your device (does not run on Simulator)
+1) Start local server: npm start.
+2) Launch project on Xcode. Be sure to change the hardcoded IP Address to your device's Address (this will be fixed soon) in the AppDelegate.m -> didFinishLaunchingWithOptions.
+3) Run from Xcode  in your device (does not run on Simulator).
