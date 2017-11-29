@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8161E7B0D8DAB38CF023028C /* libPods-eth-daemonUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CACCC5239A00A23BBBF5CB6 /* libPods-eth-daemonUITests.a */; };
+		9CB79C49D72D3B51A2D23B1C /* libPods-eth-daemon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D53068FCC00328F5B5D82B /* libPods-eth-daemon.a */; };
+		A4ADAF252AC8CE5E3882FB39 /* libPods-eth-daemonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D874A2B86D698743BF14145 /* libPods-eth-daemonTests.a */; };
+		D25952CF1FB88E4600E964C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D25952CE1FB88E4600E964C7 /* AppDelegate.m */; };
+		D25952D21FB88E4600E964C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25952D11FB88E4600E964C7 /* ViewController.m */; };
+		D25952D51FB88E4600E964C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25952D31FB88E4600E964C7 /* Main.storyboard */; };
+		D25952D71FB88E4600E964C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25952D61FB88E4600E964C7 /* Assets.xcassets */; };
+		D25952DA1FB88E4600E964C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25952D81FB88E4600E964C7 /* LaunchScreen.storyboard */; };
+		D25952DD1FB88E4600E964C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D25952DC1FB88E4600E964C7 /* main.m */; };
+		D25952E71FB88E4700E964C7 /* eth_daemonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D25952E61FB88E4700E964C7 /* eth_daemonTests.m */; };
+		D25952F21FB88E4700E964C7 /* eth_daemonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D25952F11FB88E4700E964C7 /* eth_daemonUITests.m */; };
+		D25953001FB88F7900E964C7 /* Statusgo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25952FF1FB88F7900E964C7 /* Statusgo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D25952E31FB88E4700E964C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25952C21FB88E4600E964C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D25952C91FB88E4600E964C7;
+			remoteInfo = "eth-daemon";
+		};
+		D25952EE1FB88E4700E964C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25952C21FB88E4600E964C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D25952C91FB88E4600E964C7;
+			remoteInfo = "eth-daemon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05D53068FCC00328F5B5D82B /* libPods-eth-daemon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eth-daemon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		077F8547EC7B9E3A38252D67 /* Pods-eth-daemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eth-daemon.release.xcconfig"; path = "Pods/Target Support Files/Pods-eth-daemon/Pods-eth-daemon.release.xcconfig"; sourceTree = "<group>"; };
+		0CACCC5239A00A23BBBF5CB6 /* libPods-eth-daemonUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eth-daemonUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		567A0BD8C206BC65C609AAAE /* Pods-eth-daemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eth-daemon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eth-daemon/Pods-eth-daemon.debug.xcconfig"; sourceTree = "<group>"; };
+		5D874A2B86D698743BF14145 /* libPods-eth-daemonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eth-daemonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61FD424EFDA04146B7F5FC44 /* Pods-eth-daemonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eth-daemonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eth-daemonTests/Pods-eth-daemonTests.release.xcconfig"; sourceTree = "<group>"; };
+		6BBED73BED0BCBA8DBB42EE9 /* Pods-eth-daemonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eth-daemonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eth-daemonTests/Pods-eth-daemonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EC4623337FB3FB392434BD4 /* Pods-eth-daemonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eth-daemonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eth-daemonUITests/Pods-eth-daemonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A098C2668D6D659218AF043 /* Pods-eth-daemonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eth-daemonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eth-daemonUITests/Pods-eth-daemonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D25952CA1FB88E4600E964C7 /* eth-daemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eth-daemon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25952CD1FB88E4600E964C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D25952CE1FB88E4600E964C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D25952D01FB88E4600E964C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D25952D11FB88E4600E964C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D25952D41FB88E4600E964C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D25952D61FB88E4600E964C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D25952D91FB88E4600E964C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D25952DB1FB88E4600E964C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25952DC1FB88E4600E964C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D25952E21FB88E4700E964C7 /* eth-daemonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eth-daemonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25952E61FB88E4700E964C7 /* eth_daemonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eth_daemonTests.m; sourceTree = "<group>"; };
+		D25952E81FB88E4700E964C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25952ED1FB88E4700E964C7 /* eth-daemonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eth-daemonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25952F11FB88E4700E964C7 /* eth_daemonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eth_daemonUITests.m; sourceTree = "<group>"; };
+		D25952F31FB88E4700E964C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25952FF1FB88F7900E964C7 /* Statusgo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Statusgo.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D25952C71FB88E4600E964C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25953001FB88F7900E964C7 /* Statusgo.framework in Frameworks */,
+				9CB79C49D72D3B51A2D23B1C /* libPods-eth-daemon.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25952DF1FB88E4700E964C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4ADAF252AC8CE5E3882FB39 /* libPods-eth-daemonTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25952EA1FB88E4700E964C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8161E7B0D8DAB38CF023028C /* libPods-eth-daemonUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78B95A042475AA8ACF1300F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				567A0BD8C206BC65C609AAAE /* Pods-eth-daemon.debug.xcconfig */,
+				077F8547EC7B9E3A38252D67 /* Pods-eth-daemon.release.xcconfig */,
+				6BBED73BED0BCBA8DBB42EE9 /* Pods-eth-daemonTests.debug.xcconfig */,
+				61FD424EFDA04146B7F5FC44 /* Pods-eth-daemonTests.release.xcconfig */,
+				6EC4623337FB3FB392434BD4 /* Pods-eth-daemonUITests.debug.xcconfig */,
+				8A098C2668D6D659218AF043 /* Pods-eth-daemonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A665403C298108F24763C1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05D53068FCC00328F5B5D82B /* libPods-eth-daemon.a */,
+				5D874A2B86D698743BF14145 /* libPods-eth-daemonTests.a */,
+				0CACCC5239A00A23BBBF5CB6 /* libPods-eth-daemonUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D25952C11FB88E4600E964C7 = {
+			isa = PBXGroup;
+			children = (
+				D25952FF1FB88F7900E964C7 /* Statusgo.framework */,
+				D25952CC1FB88E4600E964C7 /* eth-daemon */,
+				D25952E51FB88E4700E964C7 /* eth-daemonTests */,
+				D25952F01FB88E4700E964C7 /* eth-daemonUITests */,
+				D25952CB1FB88E4600E964C7 /* Products */,
+				78B95A042475AA8ACF1300F1 /* Pods */,
+				8A665403C298108F24763C1F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D25952CB1FB88E4600E964C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D25952CA1FB88E4600E964C7 /* eth-daemon.app */,
+				D25952E21FB88E4700E964C7 /* eth-daemonTests.xctest */,
+				D25952ED1FB88E4700E964C7 /* eth-daemonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D25952CC1FB88E4600E964C7 /* eth-daemon */ = {
+			isa = PBXGroup;
+			children = (
+				D25952CD1FB88E4600E964C7 /* AppDelegate.h */,
+				D25952CE1FB88E4600E964C7 /* AppDelegate.m */,
+				D25952D01FB88E4600E964C7 /* ViewController.h */,
+				D25952D11FB88E4600E964C7 /* ViewController.m */,
+				D25952D31FB88E4600E964C7 /* Main.storyboard */,
+				D25952D61FB88E4600E964C7 /* Assets.xcassets */,
+				D25952D81FB88E4600E964C7 /* LaunchScreen.storyboard */,
+				D25952DB1FB88E4600E964C7 /* Info.plist */,
+				D25952DC1FB88E4600E964C7 /* main.m */,
+			);
+			path = "eth-daemon";
+			sourceTree = "<group>";
+		};
+		D25952E51FB88E4700E964C7 /* eth-daemonTests */ = {
+			isa = PBXGroup;
+			children = (
+				D25952E61FB88E4700E964C7 /* eth_daemonTests.m */,
+				D25952E81FB88E4700E964C7 /* Info.plist */,
+			);
+			path = "eth-daemonTests";
+			sourceTree = "<group>";
+		};
+		D25952F01FB88E4700E964C7 /* eth-daemonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D25952F11FB88E4700E964C7 /* eth_daemonUITests.m */,
+				D25952F31FB88E4700E964C7 /* Info.plist */,
+			);
+			path = "eth-daemonUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D25952C91FB88E4600E964C7 /* eth-daemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D25952F61FB88E4700E964C7 /* Build configuration list for PBXNativeTarget "eth-daemon" */;
+			buildPhases = (
+				C7451BDF0D1F8C6C7C488CDC /* [CP] Check Pods Manifest.lock */,
+				D25952C61FB88E4600E964C7 /* Sources */,
+				D25952C71FB88E4600E964C7 /* Frameworks */,
+				D25952C81FB88E4600E964C7 /* Resources */,
+				69EECAA5E8ABC53C73D3ED2E /* [CP] Embed Pods Frameworks */,
+				FF314EBDE8F5EC8688E020CE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "eth-daemon";
+			productName = "eth-daemon";
+			productReference = D25952CA1FB88E4600E964C7 /* eth-daemon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D25952E11FB88E4700E964C7 /* eth-daemonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D25952F91FB88E4700E964C7 /* Build configuration list for PBXNativeTarget "eth-daemonTests" */;
+			buildPhases = (
+				E3299F75FDAE97F8B7DCFC59 /* [CP] Check Pods Manifest.lock */,
+				D25952DE1FB88E4700E964C7 /* Sources */,
+				D25952DF1FB88E4700E964C7 /* Frameworks */,
+				D25952E01FB88E4700E964C7 /* Resources */,
+				E263C56446D8E4B898E2E229 /* [CP] Embed Pods Frameworks */,
+				A0F2913FD440356F47A8C3C9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D25952E41FB88E4700E964C7 /* PBXTargetDependency */,
+			);
+			name = "eth-daemonTests";
+			productName = "eth-daemonTests";
+			productReference = D25952E21FB88E4700E964C7 /* eth-daemonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D25952EC1FB88E4700E964C7 /* eth-daemonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D25952FC1FB88E4700E964C7 /* Build configuration list for PBXNativeTarget "eth-daemonUITests" */;
+			buildPhases = (
+				7F892569DE0B1622280CD9B2 /* [CP] Check Pods Manifest.lock */,
+				D25952E91FB88E4700E964C7 /* Sources */,
+				D25952EA1FB88E4700E964C7 /* Frameworks */,
+				D25952EB1FB88E4700E964C7 /* Resources */,
+				1F0C162D60F90575A73E6707 /* [CP] Embed Pods Frameworks */,
+				4A266A950D8450C502370E3D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D25952EF1FB88E4700E964C7 /* PBXTargetDependency */,
+			);
+			name = "eth-daemonUITests";
+			productName = "eth-daemonUITests";
+			productReference = D25952ED1FB88E4700E964C7 /* eth-daemonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D25952C21FB88E4600E964C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Estarrona;
+				TargetAttributes = {
+					D25952C91FB88E4600E964C7 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D25952E11FB88E4700E964C7 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D25952C91FB88E4600E964C7;
+					};
+					D25952EC1FB88E4700E964C7 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D25952C91FB88E4600E964C7;
+					};
+				};
+			};
+			buildConfigurationList = D25952C51FB88E4600E964C7 /* Build configuration list for PBXProject "eth-daemon" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D25952C11FB88E4600E964C7;
+			productRefGroup = D25952CB1FB88E4600E964C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D25952C91FB88E4600E964C7 /* eth-daemon */,
+				D25952E11FB88E4700E964C7 /* eth-daemonTests */,
+				D25952EC1FB88E4700E964C7 /* eth-daemonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D25952C81FB88E4600E964C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25952DA1FB88E4600E964C7 /* LaunchScreen.storyboard in Resources */,
+				D25952D71FB88E4600E964C7 /* Assets.xcassets in Resources */,
+				D25952D51FB88E4600E964C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25952E01FB88E4700E964C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25952EB1FB88E4700E964C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F0C162D60F90575A73E6707 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eth-daemonUITests/Pods-eth-daemonUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A266A950D8450C502370E3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eth-daemonUITests/Pods-eth-daemonUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69EECAA5E8ABC53C73D3ED2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eth-daemon/Pods-eth-daemon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F892569DE0B1622280CD9B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A0F2913FD440356F47A8C3C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eth-daemonTests/Pods-eth-daemonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7451BDF0D1F8C6C7C488CDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E263C56446D8E4B898E2E229 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eth-daemonTests/Pods-eth-daemonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3299F75FDAE97F8B7DCFC59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF314EBDE8F5EC8688E020CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eth-daemon/Pods-eth-daemon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D25952C61FB88E4600E964C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25952D21FB88E4600E964C7 /* ViewController.m in Sources */,
+				D25952DD1FB88E4600E964C7 /* main.m in Sources */,
+				D25952CF1FB88E4600E964C7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25952DE1FB88E4700E964C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25952E71FB88E4700E964C7 /* eth_daemonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25952E91FB88E4700E964C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25952F21FB88E4700E964C7 /* eth_daemonUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D25952E41FB88E4700E964C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D25952C91FB88E4600E964C7 /* eth-daemon */;
+			targetProxy = D25952E31FB88E4700E964C7 /* PBXContainerItemProxy */;
+		};
+		D25952EF1FB88E4700E964C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D25952C91FB88E4600E964C7 /* eth-daemon */;
+			targetProxy = D25952EE1FB88E4700E964C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D25952D31FB88E4600E964C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D25952D41FB88E4600E964C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D25952D81FB88E4600E964C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D25952D91FB88E4600E964C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D25952F41FB88E4700E964C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D25952F51FB88E4700E964C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D25952F71FB88E4700E964C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 567A0BD8C206BC65C609AAAE /* Pods-eth-daemon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43R9NQ7PV3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "eth-daemon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.estarrona.eth-daemon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D25952F81FB88E4700E964C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 077F8547EC7B9E3A38252D67 /* Pods-eth-daemon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43R9NQ7PV3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "eth-daemon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.estarrona.eth-daemon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D25952FA1FB88E4700E964C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BBED73BED0BCBA8DBB42EE9 /* Pods-eth-daemonTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43R9NQ7PV3;
+				INFOPLIST_FILE = "eth-daemonTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.estarrona.eth-daemonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eth-daemon.app/eth-daemon";
+			};
+			name = Debug;
+		};
+		D25952FB1FB88E4700E964C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61FD424EFDA04146B7F5FC44 /* Pods-eth-daemonTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43R9NQ7PV3;
+				INFOPLIST_FILE = "eth-daemonTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.estarrona.eth-daemonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eth-daemon.app/eth-daemon";
+			};
+			name = Release;
+		};
+		D25952FD1FB88E4700E964C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC4623337FB3FB392434BD4 /* Pods-eth-daemonUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43R9NQ7PV3;
+				INFOPLIST_FILE = "eth-daemonUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.estarrona.eth-daemonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "eth-daemon";
+			};
+			name = Debug;
+		};
+		D25952FE1FB88E4700E964C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A098C2668D6D659218AF043 /* Pods-eth-daemonUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43R9NQ7PV3;
+				INFOPLIST_FILE = "eth-daemonUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.estarrona.eth-daemonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "eth-daemon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D25952C51FB88E4600E964C7 /* Build configuration list for PBXProject "eth-daemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25952F41FB88E4700E964C7 /* Debug */,
+				D25952F51FB88E4700E964C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D25952F61FB88E4700E964C7 /* Build configuration list for PBXNativeTarget "eth-daemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25952F71FB88E4700E964C7 /* Debug */,
+				D25952F81FB88E4700E964C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D25952F91FB88E4700E964C7 /* Build configuration list for PBXNativeTarget "eth-daemonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25952FA1FB88E4700E964C7 /* Debug */,
+				D25952FB1FB88E4700E964C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D25952FC1FB88E4700E964C7 /* Build configuration list for PBXNativeTarget "eth-daemonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25952FD1FB88E4700E964C7 /* Debug */,
+				D25952FE1FB88E4700E964C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D25952C21FB88E4600E964C7 /* Project object */;
+}

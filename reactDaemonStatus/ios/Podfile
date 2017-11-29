@@ -1,0 +1,27 @@
+platform :ios, '9.0'
+
+target 'eth-daemon' do
+  # use_frameworks!
+
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+      'Core',
+      'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+      'RCTText',
+      'RCTNetwork',
+      'RCTWebSocket', # needed for debugging
+      'BatchedBridge', # Include if RN = 0.46
+    ]
+    # Explicitly include Yoga if you are using RN >= 0.42.0
+    pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+  target 'eth-daemonTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'eth-daemonUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
