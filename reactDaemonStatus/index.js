@@ -9,6 +9,7 @@ import {
   Alert,
   View
 } from 'react-native';
+import Header from './src/components/Header';
 
 var AppDelegate = require('NativeModules').AppDelegate;
 
@@ -20,32 +21,37 @@ function stopFunction() {
     AppDelegate.stopDaemon();
 }
 
+console.ignoredYellowBox = ["RCTBatchedBridge is deprecated and will be removed in a future React Native release."];
+
 class Daemon extends React.Component {
   render() {
     var contents;
+    const { viewStyle } = styles;
     return (
-      <View style={styles.container}>
-        <Button
-  			onPress={() => { Alert.alert('The Node started successfully!'); startFunction() }}
-  			title='Start Node'
-		/>
-		<Button
-  			onPress={() => { Alert.alert('The Node it\'s stopped now'); stopFunction() }}
-  			title='Stop Node'
-		/>
+      <View>
+        <Header headerText={'Bination'} />
+        <View style={viewStyle}>
+            <Button
+      			   onPress={() => { Alert.alert('The Node started successfully!'); startFunction() }}
+      			   title='Start Node'
+    		    />
+        		<Button
+          			onPress={() => { Alert.alert('The Node it\'s stopped now'); stopFunction() }}
+          			title='Stop Node'
+      		  />
+        </View>
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+const styles = {
+  viewStyle: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
+    height: 500,
+    position: 'relative'
   }
-});
+};
 
-// Module name
 AppRegistry.registerComponent('Daemon', () => Daemon);

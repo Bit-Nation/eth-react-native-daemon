@@ -11,6 +11,8 @@ PODS:
     - React/RCTWebSocket
   - React/fishhook (0.50.4)
   - React/jschelpers_legacy (0.50.4)
+  - React/RCTAnimation (0.50.4):
+    - React/Core
   - React/RCTBlob (0.50.4):
     - React/Core
   - React/RCTNetwork (0.50.4):
@@ -27,6 +29,7 @@ DEPENDENCIES:
   - React/BatchedBridge (from `../node_modules/react-native`)
   - React/Core (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
+  - React/RCTAnimation (from `../node_modules/react-native`)
   - React/RCTNetwork (from `../node_modules/react-native`)
   - React/RCTText (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
@@ -42,6 +45,6 @@ SPEC CHECKSUMS:
   React: 6d7efef18e0241eb832cf4c085405169a15080ed
   yoga: b9aebf996711e50fc31f5608c10aa108a5a0c29e
 
-PODFILE CHECKSUM: 69dfc6837b0642476f8e7b8820ff5dfd893fa6e0
+PODFILE CHECKSUM: a10e8318f402ca2cb7b129a8169992244654d23e
 
 COCOAPODS: 1.2.0
