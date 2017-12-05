@@ -9,7 +9,6 @@ import {
   Alert,
   View
 } from 'react-native';
-import axios from 'axios';
 import Header from './src/components/Header';
 
 var AppDelegate = require('NativeModules').AppDelegate;
@@ -39,7 +38,7 @@ class Daemon extends React.Component {
                       .then(console.info)
                       .catch(console.error);
                     }}
-                    
+
       			   title='Start Node'
     		    />
         		<Button
