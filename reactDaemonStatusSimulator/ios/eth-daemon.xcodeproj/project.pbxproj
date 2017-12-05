@@ -10,7 +10,7 @@
 		8161E7B0D8DAB38CF023028C /* libPods-eth-daemonUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CACCC5239A00A23BBBF5CB6 /* libPods-eth-daemonUITests.a */; };
 		9CB79C49D72D3B51A2D23B1C /* libPods-eth-daemon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D53068FCC00328F5B5D82B /* libPods-eth-daemon.a */; };
 		A4ADAF252AC8CE5E3882FB39 /* libPods-eth-daemonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D874A2B86D698743BF14145 /* libPods-eth-daemonTests.a */; };
-		D24FE6961FD4CC7000CA1410 /* Statusgo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24FE6951FD4CC7000CA1410 /* Statusgo.framework */; };
+		D22CE8871FD73AEE00BB442D /* Statusgo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22CE8861FD73AEE00BB442D /* Statusgo.framework */; };
 		D25952CF1FB88E4600E964C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D25952CE1FB88E4600E964C7 /* AppDelegate.m */; };
 		D25952D21FB88E4600E964C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25952D11FB88E4600E964C7 /* ViewController.m */; };
 		D25952D51FB88E4600E964C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25952D31FB88E4600E964C7 /* Main.storyboard */; };
@@ -48,7 +48,7 @@
 		6BBED73BED0BCBA8DBB42EE9 /* Pods-eth-daemonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eth-daemonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eth-daemonTests/Pods-eth-daemonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6EC4623337FB3FB392434BD4 /* Pods-eth-daemonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eth-daemonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eth-daemonUITests/Pods-eth-daemonUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A098C2668D6D659218AF043 /* Pods-eth-daemonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eth-daemonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eth-daemonUITests/Pods-eth-daemonUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D24FE6951FD4CC7000CA1410 /* Statusgo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Statusgo.framework; sourceTree = "<group>"; };
+		D22CE8861FD73AEE00BB442D /* Statusgo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Statusgo.framework; path = ../../reactDaemonStatus/ios/Statusgo.framework; sourceTree = "<group>"; };
 		D25952CA1FB88E4600E964C7 /* eth-daemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eth-daemon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25952CD1FB88E4600E964C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D25952CE1FB88E4600E964C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D24FE6961FD4CC7000CA1410 /* Statusgo.framework in Frameworks */,
+				D22CE8871FD73AEE00BB442D /* Statusgo.framework in Frameworks */,
 				9CB79C49D72D3B51A2D23B1C /* libPods-eth-daemon.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,7 +122,7 @@
 		D25952C11FB88E4600E964C7 = {
 			isa = PBXGroup;
 			children = (
-				D24FE6951FD4CC7000CA1410 /* Statusgo.framework */,
+				D22CE8861FD73AEE00BB442D /* Statusgo.framework */,
 				D25952CC1FB88E4600E964C7 /* eth-daemon */,
 				D25952E51FB88E4700E964C7 /* eth-daemonTests */,
 				D25952F01FB88E4700E964C7 /* eth-daemonUITests */,

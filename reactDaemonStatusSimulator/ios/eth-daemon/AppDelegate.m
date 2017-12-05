@@ -45,7 +45,7 @@ RCT_EXPORT_MODULE()
 /*    NSURL *jsCodeLocation;
     jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil]; */
 
-    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
+    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://192.168.0.2:8081/index.bundle?platform=ios"];
 
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                         moduleName:@"Daemon"
@@ -154,8 +154,8 @@ RCT_EXPORT_METHOD(stopDaemon){
     
     int dev = 0;
 
-    //char *configChars = GenerateConfig((char *)[networkDir UTF8String], networkId, dev); For Lib. 0.9.7 +
-    char *configChars = GenerateConfig((char *)[networkDir UTF8String], networkId); //For Lib. 0.9.6
+    char *configChars = GenerateConfig((char *)[networkDir UTF8String], networkId, dev); //For Lib. 0.9.7 +
+    //char *configChars = GenerateConfig((char *)[networkDir UTF8String], networkId); //For Lib. 0.9.6
     
     NSString *config = [NSString stringWithUTF8String: configChars];
     configData = [config dataUsingEncoding:NSUTF8StringEncoding];

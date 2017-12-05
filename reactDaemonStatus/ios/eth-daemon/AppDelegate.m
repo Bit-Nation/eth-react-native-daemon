@@ -45,7 +45,7 @@ RCT_EXPORT_MODULE()
 /*    NSURL *jsCodeLocation;
     jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil]; */
     
-    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://192.168.1.67:8081/index.bundle?platform=ios"];
+    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://192.168.0.2:8081/index.bundle?platform=ios"];
     
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                         moduleName:@"Daemon"
