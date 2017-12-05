@@ -9,6 +9,7 @@ import {
   Alert,
   View
 } from 'react-native';
+import axios from 'axios';
 import Header from './src/components/Header';
 
 var AppDelegate = require('NativeModules').AppDelegate;
@@ -32,7 +33,13 @@ class Daemon extends React.Component {
         <Header headerText={'Bination'} />
         <View style={viewStyle}>
             <Button
-      			   onPress={() => { Alert.alert('The Node started successfully!'); startFunction() }}
+      			   onPress={() => { Alert.alert('The Node started successfully!'); startFunction()
+
+                    fetch('http://localhost:8545')
+                      .then(console.info)
+                      .catch(console.error);
+                    }}
+                    
       			   title='Start Node'
     		    />
         		<Button
