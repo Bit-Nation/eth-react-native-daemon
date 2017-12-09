@@ -45,7 +45,7 @@ RCT_EXPORT_MODULE()
 /*    NSURL *jsCodeLocation;
     jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil]; */
     
-    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://192.168.0.2:8081/index.bundle?platform=ios"];
+    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://192.168.0.3:8081/index.bundle?platform=ios"];
     
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                         moduleName:@"Daemon"
@@ -152,6 +152,7 @@ RCT_EXPORT_METHOD(stopDaemon){
     NSString *upstreamURL = [configJSON valueForKeyPath:@"UpstreamConfig.URL"];
     NSString *networkDir = [rootUrl.path stringByAppendingString:dataDir];
     //NSString *devCluster = [ReactNativeConfig envFor:@"ETHEREUM_DEV_CLUSTER"];
+     
     int dev = 1;
     //    if([devCluster isEqualToString:@"1"]){
     //        dev = 1;
@@ -167,6 +168,10 @@ RCT_EXPORT_METHOD(stopDaemon){
     [resultingConfigJson setValue:[NSNumber numberWithBool:YES] forKey:@"LogEnabled"];
     [resultingConfigJson setValue:@"geth.log" forKey:@"LogFile"];
     [resultingConfigJson setValue:@"DEBUG" forKey:@"LogLevel"];
+    //Changes for localserver up
+    [resultingConfigJson setValue:@YES forKey:@"IPCEnabled"];
+    [resultingConfigJson setValue:@"BitnationTest" forKey:@"Name"];
+    [resultingConfigJson setValue:@YES forKey:@"RPCEnabled"];
     
     if(upstreamURL != nil) {
         [resultingConfigJson setValue:[NSNumber numberWithBool:YES] forKeyPath:@"UpstreamConfig.Enabled"];

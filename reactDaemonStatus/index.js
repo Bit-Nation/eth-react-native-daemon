@@ -33,9 +33,9 @@ class Daemon extends React.Component {
         <View style={viewStyle}>
             <Button
       			   onPress={() => { Alert.alert('The Node started successfully!'); startFunction()
-               fetch('http://localhost:8545')
-                       .then(console.info)
-                       .catch(console.error);
+               //fetch('http://localhost:8545')
+                //       .then(console.info)
+                  //     .catch(console.error);
              }}
       			   title='Start Node'
     		    />
