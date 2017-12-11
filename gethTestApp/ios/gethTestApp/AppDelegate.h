@@ -8,8 +8,12 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <React/RCTRootView.h>
+#import <Geth/Geth.objc.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, RCTBridgeModule> {
+  GethNode *node;
+}
 
 @property (nonatomic, strong) UIWindow *window;
 
