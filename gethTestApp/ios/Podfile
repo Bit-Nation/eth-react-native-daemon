@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'gethTestApp' do
+  # use_frameworks!
+
+  pod 'Geth', '1.7.2'
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+      'Core',
+      'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+      'RCTText',
+      'RCTNetwork',
+      'RCTWebSocket', # needed for debugging
+      'BatchedBridge', # Include if RN = 0.46
+      'RCTAnimation'
+    ]
+    # Explicitly include Yoga if you are using RN >= 0.42.0
+    pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  
+  target 'gethTestApp-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'gethTestAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
