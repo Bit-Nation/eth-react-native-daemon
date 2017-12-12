@@ -13,6 +13,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, RCTBridgeModule> {
   GethNode *node;
+  GethEthereumClient *EthClient;
 }
 
 @property (nonatomic, strong) UIWindow *window;

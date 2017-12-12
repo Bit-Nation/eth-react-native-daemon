@@ -74,9 +74,16 @@ RCT_EXPORT_METHOD(stopDaemon){
   
   node = GethNewNode(networkDir, configGeth, &error);
   
-  GethSetVerbosity(6);
+  GethSetVerbosity(9);
   
   [node start:&error];
+  
+  //EthClient = [node getEthereumClient:&error];
+  EthClient = GethNewEthereumClient(@"http://localhost:8545", &error);
+
+  GethNodeInfo *nodeInfo = [node getNodeInfo];
+  
+  NSLog(@"EthCient, %@", EthClient);
 }
 
 - (void)stopDaemonFromReact {
