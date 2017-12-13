@@ -801,7 +801,6 @@
 		DA4819BB74C85AF05BB9909B393A46CC /* RCTClipboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTClipboard.m; sourceTree = "<group>"; };
 		DC08C8A7BE3BF0ADE5775EF002A68F5E /* RCTModuleMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTModuleMethod.h; sourceTree = "<group>"; };
 		DC6012113740545945889758A4C7C1BB /* RCTTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTextField.h; sourceTree = "<group>"; };
-		DC69BA2149C6734E0E8D5767F1A47B87 /* Geth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Geth.framework; path = Frameworks/Geth.framework; sourceTree = "<group>"; };
 		DDA42DDA6DD78582F289E5905E11293D /* RCTMaskedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMaskedView.m; sourceTree = "<group>"; };
 		DDD86AE08C672144A4ADE07329FDD61C /* RCTRootViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRootViewDelegate.h; sourceTree = "<group>"; };
 		DE1F9BF3343D2D7027F02B163180B91D /* RCTInterpolationAnimatedNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTInterpolationAnimatedNode.m; sourceTree = "<group>"; };
@@ -938,14 +937,6 @@
 			path = Libraries;
 			sourceTree = "<group>";
 		};
-		0EAD7637CDD1E8957E2388141EBFD4A4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DC69BA2149C6734E0E8D5767F1A47B87 /* Geth.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		0F7ADBD0127A27E51F036A3330FB56A4 /* Executors */ = {
 			isa = PBXGroup;
 			children = (
@@ -1022,14 +1013,6 @@
 				8546FCE5A7880174CC1643C9547BE737 /* React */,
 			);
 			name = BatchedBridge;
-			sourceTree = "<group>";
-		};
-		2F23A0DA8F8D0D3B94A96FFE2BF0B7B4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EF1769E8B9009FA17E7E5E90158C8604 /* Geth */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		3ADCEDC015A9C64DAA6FDB4A215EE48D /* Modules */ = {
@@ -1373,7 +1356,6 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				C93B8DE78BC3477259100FC17FE1C09C /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				2F23A0DA8F8D0D3B94A96FFE2BF0B7B4 /* Pods */,
 				D237F0C8A75709F9B130681219499A87 /* Products */,
 				B148F74DD4D184A4E9A83D52DDE120FB /* Targets Support Files */,
 			);
@@ -1725,15 +1707,6 @@
 			);
 			name = React;
 			path = React;
-			sourceTree = "<group>";
-		};
-		EF1769E8B9009FA17E7E5E90158C8604 /* Geth */ = {
-			isa = PBXGroup;
-			children = (
-				0EAD7637CDD1E8957E2388141EBFD4A4 /* Frameworks */,
-			);
-			name = Geth;
-			path = Geth;
 			sourceTree = "<group>";
 		};
 		F0DF2AED27C6E6478246F46A9A180A08 /* Libraries */ = {

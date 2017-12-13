@@ -1,5 +1,4 @@
 PODS:
-  - Geth (1.7.2)
   - React/BatchedBridge (0.51.0):
     - React/Core
     - React/cxxreact_legacy
@@ -27,7 +26,6 @@ PODS:
   - yoga (0.51.0.React)
 
 DEPENDENCIES:
-  - Geth (= 1.7.2)
   - React/BatchedBridge (from `../node_modules/react-native`)
   - React/Core (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
@@ -44,10 +42,9 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Geth: 1efbf2eb4d4c697a7232c5385da127ca386b1060
   React: 352f02f1db6e4744f9a758527e13e3fdefbbd6ba
   yoga: b5d96400ca8b2936965a7a6516da7c1177f432a3
 
-PODFILE CHECKSUM: f3999716b20bfb4f288aab8f2dfc7bfbdf8b3430
+PODFILE CHECKSUM: 3606c9622f4d215fdc352b699519191aa0dccb1f
 
 COCOAPODS: 1.2.0

@@ -4,7 +4,6 @@
 target 'gethTestApp' do
   # use_frameworks!
 
-  pod 'Geth', '1.7.2'
   pod 'React', :path => '../node_modules/react-native', :subspecs => [
       'Core',
       'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
